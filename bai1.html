@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra giữa Module</title>
+</head>
+<body>
+<script>
+    let math ;
+    let literature;
+    let english;
+    do {
+        math = parseInt(prompt("Nhập điểm toán: "));
+    }while ( math < 0 || math >10);
+    do {
+        literature = parseInt(prompt("Nhập điểm văn: "));
+    }while ( literature < 0 || literature >10);
+    do {
+        english = parseInt(prompt("Nhập điểm tiếng anh: "));
+    }while ( english < 0 || english >10);
+    let resutl = 0 ;
+    resutl = (math*2 + literature + english*2)/5;
+    if (resutl < 5) {
+        alert("Điểm trung bình là " + resutl + " Đánh giá: Không đạt");
+    } else if (5 < resutl < 7.5) {
+        alert("Điểm trung bình là " + resutl + " Đánh giá: Đạt");
+    } else if (7.5 < resutl < 8.5) {
+        alert("Điểm trung bình là " + resutl + " Đánh giá: Khá");
+    } else {
+        alert("Điểm trung bình là " + resutl + " Đánh giá: Tốt");
+    }
+</script>
+</body>
+</html>
